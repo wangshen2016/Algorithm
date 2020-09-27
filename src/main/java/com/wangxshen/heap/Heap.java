@@ -33,7 +33,7 @@ public abstract class Heap {
         return this.heap;
     }
 
-    public int getHeapSize() {
+    public int size() {
         return this.heapSize;
     }
 

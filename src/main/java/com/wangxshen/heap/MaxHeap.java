@@ -44,7 +44,7 @@ public class MaxHeap extends Heap{
      * @Author:   on2020-09-27 15:54:00
      * @Param: null
      * @return:
-     * description: O(logN)
+     * description: O(logN), 向上调整当前index数据的位置
      */
     @Override
     public void heapInsert(int[] arr, int index) {
