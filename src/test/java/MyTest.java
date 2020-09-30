@@ -1,4 +1,5 @@
 import com.wangxshen.heap.MaxHeap;
+import com.wangxshen.linkedList.execises.IsPalindromeList;
 import com.wangxshen.sort.BubbleSort;
 import com.wangxshen.sort.HeapSort;
 import com.wangxshen.sort.quickSort.QuickSort;
@@ -27,5 +28,26 @@ public class MyTest {
     @Test
     public void testHeap() {
         MaxHeap maxHeap = new MaxHeap();
+    }
+
+    @Test
+    public void testReverse() {
+        IsPalindromeList.Node head = new IsPalindromeList.Node(0);
+        IsPalindromeList.Node node = head;
+        for (int i = 1; i < 10; i++) {
+            node.next = new IsPalindromeList.Node(i);
+            node = node.next;
+        }
+//        node = head;
+//        while (node != null) {
+//            System.out.println(node.value);
+//            node = node.next;
+//        }
+
+        node = IsPalindromeList.reverse(head);
+        while (node != null) {
+            System.out.println(node.value);
+            node = node.next;
+        }
     }
 }

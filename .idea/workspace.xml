@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort/CounterSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort/RadixSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/trie/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/trie/Trie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/trie/Trie2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/trie/TrieInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/IsPalindromeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SlowFastPointer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SmallEqualBigger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangxshen/linkedList/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangxshen/linkedList/SinglyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MyTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +53,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.RadixSort">
-    <configuration name="ComparatorHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.heap.ComparatorHeap" />
+  <component name="RunManager" selected="Application.IsPalindromeList">
+    <configuration name="IsPalindromeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.IsPalindromeList" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.heap.*" />
+          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,6 +80,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SlowFastPointer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.SlowFastPointer" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangxshen.trie.Test" />
       <module name="Algorithm" />
@@ -92,39 +106,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.trie.Test2" />
+    <configuration name="MyTest.testReverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.trie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Trie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.trie.Trie" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.trie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="testReverse" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsPalindromeList" />
+        <item itemvalue="JUnit.MyTest.testReverse" />
+        <item itemvalue="Application.SlowFastPointer" />
         <item itemvalue="Application.RadixSort" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Trie" />
-        <item itemvalue="Application.ComparatorHeap" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +142,9 @@
       <workItem from="1601086307365" duration="12616000" />
       <workItem from="1601188327893" duration="12586000" />
       <workItem from="1601258527414" duration="13123000" />
-      <workItem from="1601291165290" duration="7061000" />
+      <workItem from="1601291165290" duration="7784000" />
+      <workItem from="1601357694060" duration="7291000" />
+      <workItem from="1601431186937" duration="6749000" />
     </task>
     <servers />
   </component>
@@ -156,10 +156,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1601105360628" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601287855222">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601446200171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601287855222" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601446200171" />
     <state x="420" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601220528234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,38 +172,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="189" key="GridCell.Tab.0.bottom" timestamp="1601302100508">
+    <state width="1493" height="315" key="GridCell.Tab.0.bottom" timestamp="1601450944701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601302100508" />
-    <state width="1493" height="189" key="GridCell.Tab.0.center" timestamp="1601302100508">
+    <state width="1493" height="315" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
+    <state width="1493" height="315" key="GridCell.Tab.0.center" timestamp="1601450944701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601302100508" />
-    <state width="1493" height="189" key="GridCell.Tab.0.left" timestamp="1601302100508">
+    <state width="1493" height="315" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
+    <state width="1493" height="315" key="GridCell.Tab.0.left" timestamp="1601450944701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601302100508" />
-    <state width="1493" height="189" key="GridCell.Tab.0.right" timestamp="1601302100508">
+    <state width="1493" height="315" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
+    <state width="1493" height="315" key="GridCell.Tab.0.right" timestamp="1601450944701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601302100508" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1601282246245">
+    <state width="1493" height="315" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
+    <state width="1493" height="330" key="GridCell.Tab.1.bottom" timestamp="1601450303687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601282246245" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1601282246245">
+    <state width="1493" height="330" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
+    <state width="1493" height="330" key="GridCell.Tab.1.center" timestamp="1601450303687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601282246245" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1601282246245">
+    <state width="1493" height="330" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
+    <state width="1493" height="330" key="GridCell.Tab.1.left" timestamp="1601450303687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601282246245" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1601282246245">
+    <state width="1493" height="330" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
+    <state width="1493" height="330" key="GridCell.Tab.1.right" timestamp="1601450303687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601282246245" />
+    <state width="1493" height="330" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1601105457156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

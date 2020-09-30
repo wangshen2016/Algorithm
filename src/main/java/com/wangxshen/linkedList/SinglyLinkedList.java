@@ -25,9 +25,13 @@ public class SinglyLinkedList<T> implements LinkedList<T>{
         return pre;
     }
 
+    /**
+     * @Author:   on2020-09-29 14:22:51
+     * @Param: null
+     * @return:
+     * description: 头插法
+     */
     public LinkedList<T> removeValue(LinkedList<T> head, Object val) {
-        //头插法
-        /*
         SinglyLinkedList pre = new SinglyLinkedList(null);
         SinglyLinkedList h = (SinglyLinkedList) head;
         pre.next = h;
@@ -41,9 +45,17 @@ public class SinglyLinkedList<T> implements LinkedList<T>{
             }
         }
         return pre.next;
-        */
+    }
 
-        //无需头插法
+
+    /**
+     * @Author:   on2020-09-29 14:23:15
+     * @Param: null
+     * @return:
+     * description: 普通方法，不需要头插指针
+     */
+    public LinkedList<T> removeValue2(LinkedList<T> head, Object val) {
+
         SinglyLinkedList<T> h = (SinglyLinkedList<T>) head;
         while (h != null) {
             if (h.value.equals(val)) {
