@@ -2,6 +2,7 @@ package com.wangxshen.tree;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -140,15 +141,15 @@ public class BinaryTree {
     //层序遍历
     public static void level(Node head) {
         Queue<Node> queue = new ArrayDeque<>();
-        queue.offer(head);
+        queue.add(head);
         while (!queue.isEmpty()) {
             Node poll = queue.poll();
             System.out.print(poll.value + " ");
             if (poll.lchild != null) {
-                queue.offer(poll.lchild);
+                queue.add(poll.lchild);
             }
             if (poll.rchild != null) {
-                queue.offer(poll.rchild);
+                queue.add(poll.rchild);
             }
         }
     }
@@ -158,18 +159,18 @@ public class BinaryTree {
         Queue<Node> queue = new ArrayDeque<>();
         int n = 1;
         int count = 0;
-        queue.offer(head);
+        queue.add(head);
         while (!queue.isEmpty()) {
             count = 0;
             for (int i = 0; i < n; i++) {
                 Node poll = queue.poll();
                 System.out.print(poll.value + " ");
                 if (poll.lchild != null) {
-                    queue.offer(poll.lchild);
+                    queue.add(poll.lchild);
                     count++;
                 }
                 if (poll.rchild != null) {
-                    queue.offer(poll.rchild);
+                    queue.add(poll.rchild);
                     count++;
                 }
             }
@@ -178,9 +179,9 @@ public class BinaryTree {
         }
     }
 
-    //serialize
+    //先序遍历-序列化
     public static Queue<Integer> serialize(Node head) {
-        Queue<Integer> ans = new ArrayDeque<>();
+        Queue<Integer> ans = new LinkedList<>();
         pres(head, ans);
         return ans;
     }
@@ -195,7 +196,7 @@ public class BinaryTree {
         }
     }
 
-    //deserialize
+    //先序遍历-反序列化
     public static Node build(Queue<Integer> queue) {
         if (queue.isEmpty()) {
             return null;
@@ -212,6 +213,61 @@ public class BinaryTree {
         head.lchild = preb(queue);
         head.rchild = preb(queue);
         return head;
+    }
+
+    //层序遍历-序列化
+    public static Queue<Integer> levelSerialze(Node head) {
+        if (head == null) {
+            return null;
+        }
+        Queue<Node> queue = new ArrayDeque<>();
+        Queue<Integer> ans = new LinkedList<>();
+
+        queue.add(head);
+        while (!queue.isEmpty()) {
+            Node poll = queue.poll();
+            ans.add(poll.value);
+            if (poll.lchild != null) {
+                queue.add(poll.lchild);
+            } else {
+                ans.add(null);
+            }
+            if (poll.rchild != null) {
+                queue.add(poll.rchild);
+            } else {
+                ans.add(null);
+            }
+        }
+        return ans;
+    }
+
+    //层序遍历-反序列化
+    public static Node buildByLevel(Queue<Integer> queue) {
+        if (queue == null || queue.isEmpty()) {
+            return null;
+        }
+        Node head = generateNode(queue.poll());
+        Queue<Node> nodes = new ArrayDeque<>();
+        nodes.add(head);
+        while (!nodes.isEmpty()) {
+            Node poll = nodes.poll();
+            poll.lchild = generateNode(queue.poll());
+            poll.rchild = generateNode(queue.poll());
+            if (poll.lchild != null) {
+                nodes.add(poll.lchild);
+            }
+            if (poll.rchild != null) {
+                nodes.add(poll.rchild);
+            }
+        }
+        return head;
+    }
+
+    public static Node generateNode(Integer val) {
+        if (val == null) {
+            return null;
+        }
+        return new Node(val);
     }
 
 
@@ -236,22 +292,48 @@ public class BinaryTree {
         n8.lchild = n9;
         n8.rchild = n10;
 
+        System.out.println("\n先序遍历二叉树，递归算法");
         pre(n1);
-        System.out.println();
+
+        System.out.println("\n先序遍历二叉树，非递归算法");
         pre2(n1);
-        System.out.println();
+
+        System.out.println("\n中序遍历二叉树，递归算法");
         in(n1);
-        System.out.println();
+
+        System.out.println("\n中序遍历二叉树，递归算法");
         in2(n1);
-        System.out.println();
+
+        System.out.println("\n后序遍历二叉树，递归算法");
         post(n1);
-        System.out.println();
+
+        System.out.println("\n后序遍历二叉树，递归算法1，使用两个栈实现");
         post2(n1);
-        System.out.println();
+
+        System.out.println("\n后序遍历二叉树，递归算法2，使用一个栈实现");
         post3(n1);
-        System.out.println();
+
+        System.out.println("\n层序遍历");
         level(n1);
-        System.out.println("-----------------------");
+
+        System.out.println("\n层序遍历并输出每层长度");
         level2(n1);
+
+        System.out.println("\n先序序列化二叉树");
+        Queue<Integer> serialize = serialize(n1);
+        System.out.println(serialize);
+
+        System.out.println("\n先序反序列化");
+        Node head = build(serialize);
+        pre(head);
+
+        System.out.println("\n层序序列化二叉树");
+        Queue<Integer> queue = levelSerialze(n1);
+        System.out.println(queue);
+
+        System.out.println("\n层序反序列化");
+        head = buildByLevel(queue);
+        level(head);
+
     }
 }

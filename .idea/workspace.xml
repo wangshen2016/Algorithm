@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/expression/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/CountSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/InsertSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/RadixSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/SelectSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SmallEqualBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SmallEqualBigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +50,29 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.Calculator">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangxshen.lru" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\linkedList\execises" />
+      <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\sort\sort2_simple" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BinaryTree">
+    <configuration name="BinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.tree.BinaryTree" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangxshen.expression.Calculator" />
       <module name="Algorithm" />
@@ -79,19 +88,6 @@
     </configuration>
     <configuration name="IsPalindromeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.IsPalindromeList" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SlowFastPointer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.SlowFastPointer" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTree" />
         <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.SmallEqualBigger" />
         <item itemvalue="Application.IsPalindromeList" />
         <item itemvalue="JUnit.MyTest.testReverse" />
-        <item itemvalue="Application.SlowFastPointer" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +168,7 @@
       <workItem from="1605951473092" duration="1346000" />
       <workItem from="1605959738665" duration="2422000" />
       <workItem from="1606102363219" duration="2517000" />
-      <workItem from="1606221582686" duration="240000" />
+      <workItem from="1606221582686" duration="3197000" />
     </task>
     <servers />
   </component>
@@ -200,22 +196,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1605342515571">
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1606224845293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605342515571" />
-    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1605342515571">
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
+    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1606224845293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605342515571" />
-    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1605342515570">
+    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
+    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1606224845293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605342515570" />
-    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1605342515571">
+    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1606224845293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605342515571" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
     <state width="1493" height="168" key="GridCell.Tab.1.bottom" timestamp="1605340795477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
