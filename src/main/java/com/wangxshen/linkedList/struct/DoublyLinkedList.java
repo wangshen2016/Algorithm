@@ -1,4 +1,4 @@
-package com.wangxshen.linkedList;
+package com.wangxshen.linkedList.struct;
 
 /**
  * @Author WangShen

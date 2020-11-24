@@ -1,6 +1,5 @@
 package com.wangxshen.stack;
 
-import com.wangxshen.linkedList.DoublyLinkedList;
 import com.wangxshen.queue.DoubleEndsQueue;
 
 /**

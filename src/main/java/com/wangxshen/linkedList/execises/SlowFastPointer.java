@@ -1,7 +1,6 @@
 package com.wangxshen.linkedList.execises;
 
-import com.wangxshen.linkedList.LinkedList;
-import com.wangxshen.linkedList.SinglyLinkedList;
+import com.wangxshen.linkedList.struct.SinglyLinkedList;
 
 import java.util.ArrayList;
 

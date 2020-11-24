@@ -1,6 +1,6 @@
 package com.wangxshen.queue;
 
-import com.wangxshen.linkedList.DoublyLinkedList;
+import com.wangxshen.linkedList.struct.DoublyLinkedList;
 
 /**
  * @Author WangShen

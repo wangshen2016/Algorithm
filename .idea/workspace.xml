@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/IsPalindromeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SlowFastPointer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SmallEqualBigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/expression/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/CountSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/InsertSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/RadixSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/SelectSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/sort2_simple/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangxshen/linkedList/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangxshen/linkedList/SinglyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SmallEqualBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises/SmallEqualBigger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +55,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Git_clone/algorithmbasic2020" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.IsPalindromeList">
-    <configuration name="IsPalindromeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.IsPalindromeList" />
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager" selected="Application.Calculator">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.expression.Calculator" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
+          <option name="PATTERN" value="com.wangxshen.expression.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadixSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.sort.RadixSort" />
+    <configuration name="IsPalindromeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.IsPalindromeList" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.sort.*" />
+          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.trie.Test" />
+    <configuration name="SmallEqualBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.SmallEqualBigger" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.trie.*" />
+          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,13 +128,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.SmallEqualBigger" />
         <item itemvalue="Application.IsPalindromeList" />
         <item itemvalue="JUnit.MyTest.testReverse" />
         <item itemvalue="Application.SlowFastPointer" />
-        <item itemvalue="Application.RadixSort" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -144,7 +157,22 @@
       <workItem from="1601258527414" duration="13123000" />
       <workItem from="1601291165290" duration="7784000" />
       <workItem from="1601357694060" duration="7291000" />
-      <workItem from="1601431186937" duration="6749000" />
+      <workItem from="1601431186937" duration="16636000" />
+      <workItem from="1602054170450" duration="3000" />
+      <workItem from="1602060760617" duration="31000" />
+      <workItem from="1604399455500" duration="2917000" />
+      <workItem from="1605337360447" duration="5575000" />
+      <workItem from="1605532944041" duration="41000" />
+      <workItem from="1605533051393" duration="1327000" />
+      <workItem from="1605578769513" duration="3095000" />
+      <workItem from="1605595803140" duration="615000" />
+      <workItem from="1605625203949" duration="598000" />
+      <workItem from="1605858557724" duration="1373000" />
+      <workItem from="1605929948973" duration="1375000" />
+      <workItem from="1605951473092" duration="1346000" />
+      <workItem from="1605959738665" duration="2422000" />
+      <workItem from="1606102363219" duration="2517000" />
+      <workItem from="1606221582686" duration="240000" />
     </task>
     <servers />
   </component>
@@ -156,14 +184,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1601105360628" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601446200171">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601455128979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601446200171" />
-    <state x="420" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601220528234">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601455128979" />
+    <state x="420" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606221801738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="420" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1601220528234" />
+    <state x="420" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1606221801738" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601105702574">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,38 +200,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="315" key="GridCell.Tab.0.bottom" timestamp="1601450944701">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1605342515571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="315" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
-    <state width="1493" height="315" key="GridCell.Tab.0.center" timestamp="1601450944701">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605342515571" />
+    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1605342515571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="315" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
-    <state width="1493" height="315" key="GridCell.Tab.0.left" timestamp="1601450944701">
+    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605342515571" />
+    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1605342515570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="315" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
-    <state width="1493" height="315" key="GridCell.Tab.0.right" timestamp="1601450944701">
+    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605342515570" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1605342515571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="315" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601450944701" />
-    <state width="1493" height="330" key="GridCell.Tab.1.bottom" timestamp="1601450303687">
+    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605342515571" />
+    <state width="1493" height="168" key="GridCell.Tab.1.bottom" timestamp="1605340795477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="330" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
-    <state width="1493" height="330" key="GridCell.Tab.1.center" timestamp="1601450303687">
+    <state width="1493" height="168" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605340795477" />
+    <state width="1493" height="168" key="GridCell.Tab.1.center" timestamp="1605340795477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="330" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
-    <state width="1493" height="330" key="GridCell.Tab.1.left" timestamp="1601450303687">
+    <state width="1493" height="168" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605340795477" />
+    <state width="1493" height="168" key="GridCell.Tab.1.left" timestamp="1605340795477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="330" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
-    <state width="1493" height="330" key="GridCell.Tab.1.right" timestamp="1601450303687">
+    <state width="1493" height="168" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605340795477" />
+    <state width="1493" height="168" key="GridCell.Tab.1.right" timestamp="1605340795477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="330" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601450303687" />
+    <state width="1493" height="168" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605340795477" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1601105457156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -212,5 +240,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1601014597272" />
+    <state x="178" y="0" key="new project wizard" timestamp="1605532992718">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605532992718" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606102447882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606102447882" />
   </component>
 </project>
