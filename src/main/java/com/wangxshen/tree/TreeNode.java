@@ -1,5 +1,7 @@
 package com.wangxshen.tree;
 
+import sun.reflect.generics.tree.Tree;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -58,5 +60,20 @@ public class TreeNode {
         head.lchild = preBuild(queue, head);
         head.rchild = preBuild(queue, head);
         return head;
+    }
+
+    public static Queue<TreeNode> getNodes(TreeNode head) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        prePush(head, queue);
+        return queue;
+    }
+
+    public static void prePush(TreeNode head, Queue<TreeNode> queue) {
+        if (head == null) {
+            return;
+        }
+        queue.add(head);
+        prePush(head.lchild, queue);
+        prePush(head.rchild, queue);
     }
 }
