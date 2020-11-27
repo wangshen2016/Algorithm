@@ -5,6 +5,11 @@ package com.wangxshen.linkedList.execises;
  * @Date 2020/11/23 18:18
  * @Version 1.0
  */
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @Author:   on2020-11-24 20:44:40
  * @Param: null
@@ -14,6 +19,7 @@ package com.wangxshen.linkedList.execises;
 public class Node {
     public int value;
     public Node next;
+    public Node rand;
 
     public Node(int value) {
         this.value = value;
@@ -45,6 +51,34 @@ public class Node {
             pre = pre.next;
         }
         return head.next;
+    }
+
+    public static Node buildRand(int[] arr) {
+        Node pre = new Node(0);
+        Node head = pre;
+        Node[] nodeArray = new Node[arr.length+1];
+        for (int i = 0; i < arr.length; i++) {
+            pre.next = new Node(arr[i]);
+            pre = pre.next;
+            nodeArray[i] = pre;
+        }
+        nodeArray[arr.length] = null;
+        //随机指针赋值
+        pre = head.next;
+        int randIndex = 0;
+        while (pre != null) {
+            randIndex = (int)((Math.random()) * (arr.length+1));
+            pre.rand = nodeArray[randIndex];
+            pre = pre.next;
+        }
+        return head.next;
+    }
+
+    public static void printRand(Node head) {
+        while (head != null) {
+            System.out.println("value: " + head.value + ", rand: " + (head.rand != null ? head.rand.value : "--"));
+            head = head.next;
+        }
     }
 
     public static int[] getTestValues(int N) {
