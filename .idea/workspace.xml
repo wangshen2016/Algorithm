@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangxshen/tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangxshen/tree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,19 +90,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsPalindromeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.IsPalindromeList" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.linkedList.execises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SmallEqualBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangxshen.linkedList.execises.SmallEqualBigger" />
       <module name="Algorithm" />
@@ -112,11 +103,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.testReverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test01" />
+      <module name="Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="testReverse" />
+      <option name="MAIN_CLASS_NAME" value="Test01" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,10 +123,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BinaryTree" />
+        <item itemvalue="JUnit.Test01.test" />
+        <item itemvalue="Application.Test01" />
         <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.SmallEqualBigger" />
-        <item itemvalue="Application.IsPalindromeList" />
-        <item itemvalue="JUnit.MyTest.testReverse" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +166,9 @@
       <workItem from="1605951473092" duration="1346000" />
       <workItem from="1605959738665" duration="2422000" />
       <workItem from="1606102363219" duration="2517000" />
-      <workItem from="1606221582686" duration="3197000" />
+      <workItem from="1606221582686" duration="4212000" />
+      <workItem from="1606273645375" duration="5665000" />
+      <workItem from="1606455549658" duration="765000" />
     </task>
     <servers />
   </component>
@@ -196,22 +196,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1606224845293">
+    <state width="1493" height="542" key="GridCell.Tab.0.bottom" timestamp="1606456279194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
-    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1606224845293">
+    <state width="1493" height="542" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606456279194" />
+    <state width="1493" height="542" key="GridCell.Tab.0.center" timestamp="1606456279194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
-    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1606224845293">
+    <state width="1493" height="542" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606456279194" />
+    <state width="1493" height="542" key="GridCell.Tab.0.left" timestamp="1606456279194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
-    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1606224845293">
+    <state width="1493" height="542" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606456279194" />
+    <state width="1493" height="542" key="GridCell.Tab.0.right" timestamp="1606456279194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606224845293" />
+    <state width="1493" height="542" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606456279194" />
     <state width="1493" height="168" key="GridCell.Tab.1.bottom" timestamp="1605340795477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

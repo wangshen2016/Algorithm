@@ -263,6 +263,39 @@ public class BinaryTree {
         return head;
     }
 
+    //打印二叉树
+    public static void printNode(Node head) {
+        if (head == null) {
+            return;
+        }
+        System.out.println("Binary Tree:");
+        inOrder(head, 0, "H", 10);
+        System.out.println();
+    }
+
+    public static void inOrder(Node head, int height, String to, int len) {
+        if (head == null) {
+            return;
+        }
+        inOrder(head.rchild, height + 1, "v", len);
+        String value = to + head.value + to;
+        int lenm = value.length();
+        int lenl = (len-lenm)/2;
+        int lenr = len - lenm - lenl;
+        value = getSpace(lenl) + value + getSpace(lenr);
+        System.out.println(getSpace(height * len) + value);
+
+        inOrder(head.lchild, height+1, "^", len);
+    }
+
+    public static String getSpace(int len) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < len; i++) {
+            stringBuilder.append(" ");
+        }
+        return stringBuilder.toString();
+    }
+
     public static Node generateNode(Integer val) {
         if (val == null) {
             return null;
@@ -334,6 +367,9 @@ public class BinaryTree {
         System.out.println("\n层序反序列化");
         head = buildByLevel(queue);
         level(head);
+
+        System.out.println("\n打印二叉树");
+        printNode(n1);
 
     }
 }
