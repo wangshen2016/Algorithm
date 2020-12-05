@@ -91,7 +91,7 @@ public class BinaryTree_dp {
      * @Author:   on2020-12-05 14:47:53
      * @Param: null
      * @return: 
-     * description: 给定一颗二叉树的头节点，返回这颗二叉树的最大搜索子树的头节点
+     * description: 给定一颗二叉树的头节点，返回这颗二叉树的最大搜索子树的节点数
      */
     public static class Info_maxSearchTree{
         boolean isAllBST = false;
@@ -144,6 +144,65 @@ public class BinaryTree_dp {
     }
 
     /**
+     * @Author:   on2020-12-05 23:09:21
+     * @Param: null
+     * @return:
+     * description: 给定一棵二叉树头节点，返回其最大二叉搜索子树的头节点
+     */
+    public static class Info_maxBST{
+        TreeNode maxSubBSTHead;
+        int size;
+        int max;
+        int min;
+
+        public Info_maxBST(TreeNode maxSubBSTHead, int size, int max, int min) {
+            this.maxSubBSTHead = maxSubBSTHead;
+            this.size = size;
+            this.max = max;
+            this.min = min;
+        }
+    }
+
+    public static TreeNode getMaxBSTHead(TreeNode node) {
+        Info_maxBST maxBSTInfo = getMaxBSTInfo(node);
+        return maxBSTInfo.maxSubBSTHead;
+    }
+
+    public static Info_maxBST getMaxBSTInfo(TreeNode node) {
+        if (node == null) {
+            return null;
+        }
+        Info_maxBST lInfo = getMaxBSTInfo(node.lchild);
+        Info_maxBST rInfo = getMaxBSTInfo(node.rchild);
+
+        TreeNode subMaxBSTHead = null;
+        int size = 0;
+        int max = node.value;
+        int min = node.value;
+
+        if (lInfo != null) {
+            max = Math.max(lInfo.max, max);
+            min = Math.min(lInfo.min, min);
+            subMaxBSTHead = lInfo.maxSubBSTHead;
+            size = lInfo.size;
+        }
+        if (rInfo != null) {
+            max = Math.max(rInfo.max, max);
+            min = Math.min(rInfo.min, min);
+            subMaxBSTHead = size > rInfo.size ? subMaxBSTHead : rInfo.maxSubBSTHead;
+            size = size > rInfo.size ? size : rInfo.size;
+        }
+        if ((lInfo == null || lInfo.maxSubBSTHead == node.lchild) &&
+            (rInfo == null || rInfo.maxSubBSTHead == node.rchild) &&
+            (lInfo == null || lInfo.max < node.value) &&
+            (rInfo == null || rInfo.min > node.value)) {
+            subMaxBSTHead = node;
+            size = (lInfo == null ? 0 : lInfo.size) + (rInfo == null ? 0 : rInfo.size) + 1;
+        }
+        return new Info_maxBST(subMaxBSTHead, size, max, min);
+    }
+
+    /**
      * @Author:   on2020-12-05 20:04:00
      * @Param: null
      * @return:
@@ -160,20 +219,153 @@ public class BinaryTree_dp {
         List<Employee> nexts;//员工的直属下级
     }
 
+    public static class Info_happy {
+        int yes;//该员工参加时的最大happy
+        int no;//该员工不参加时的最大happy
+
+        public Info_happy(int yes, int no) {
+            this.yes = yes;
+            this.no = no;
+        }
+    }
+
+    public static int getHappy(Employee boss) {
+        Info_happy infoHappy = process(boss);
+        return Math.max(infoHappy.yes, infoHappy.no);
+    }
+
+    public static Info_happy process(Employee emp) {
+        if (emp.nexts == null) {
+            return new Info_happy(emp.happy,0);
+        }
+
+        int yes = emp.happy;
+        int no = 0;
+        for (Employee e : emp.nexts) {
+            Info_happy info = process(e);
+            yes += info.no;
+            no += Math.max(info.yes, info.no);
+        }
+        return new Info_happy(yes, no);
+    }
+
+    /**
+     * @Author:   on2020-12-05 22:43:05
+     * @Param: null
+     * @return:
+     * description: 给定一棵二叉树的头节点，返回这棵二叉树是不是满二叉树
+     */
+    public static class Info_full {
+        int size;
+        int height;
+
+        public Info_full(int size, int height) {
+            this.size = size;
+            this.height = height;
+        }
+    }
+
+    public static boolean isFull(TreeNode node) {
+        Info_full info = getInfo(node);
+        return Math.pow(2,info.height) - 1 == info.size;
+    }
+
+    public static Info_full getInfo(TreeNode node) {
+        if (node == null) {
+            return new Info_full(0,0);
+        }
+        Info_full lInfo = getInfo(node.lchild);
+        Info_full rInfo = getInfo(node.rchild);
+        int height = Math.max(lInfo.height, rInfo.height) + 1;
+        int size = lInfo.size + rInfo.size + 1;
+        return new Info_full(size, height);
+    }
+
+    /**
+     * @Author:   on2020-12-05 23:25:22
+     * @Param: null
+     * @return:
+     * description: 给定一棵二叉树头节点，判断是不是完全二叉树
+     */
+    //非递归方法，使用宽度优先遍历
+    public static boolean isCBT(TreeNode node) {
+        if (node == null) {
+            return false;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(node);
+        boolean leaf = false;//用于判断是否已经出现过叶子节点
+        while (!queue.isEmpty()) {
+            TreeNode poll = queue.poll();
+            TreeNode l = poll.lchild;
+            TreeNode r = poll.rchild;
+            if ((leaf && (l != null || r != null)) || (l == null && r != null)) {
+                return false;
+            }
+            if (l != null) {
+                queue.add(l);
+            }
+            if (r != null) {
+                queue.add(r);
+            }
+            if (l == null || r == null) {
+                leaf = true;
+            }
+        }
+        return true;
+    }
+
+    //递归套路
+    public static class Info_cbt {
+        boolean isCBT;
+        boolean isFull;
+        int height;
+
+        public Info_cbt(boolean isCBT, boolean isFull, int height) {
+            this.isCBT = isCBT;
+            this.isFull = isFull;
+            this.height = height;
+        }
+    }
+
+    public static boolean isCBT2(TreeNode node) {
+        Info_cbt cbtInfo = getCBTInfo(node);
+        return cbtInfo.isCBT;
+    }
+
+    public static Info_cbt getCBTInfo(TreeNode node) {
+        if (node == null) {
+            return new Info_cbt(true, true, 0);
+        }
+        Info_cbt lInfo = getCBTInfo(node.lchild);
+        Info_cbt rInfo = getCBTInfo(node.rchild);
+        int height = Math.max(lInfo.height, rInfo.height) + 1;
+        boolean isFull = lInfo.isFull && rInfo.isFull && lInfo.height == rInfo.height;
+        boolean isCBT = false;
+        if (isFull) {
+            isCBT = true;
+        } else {
+            if (lInfo.isCBT && rInfo.isCBT) {
+                if (lInfo.isCBT && rInfo.isFull && lInfo.height == rInfo.height + 1) {
+                    isCBT = true;
+                } else if (lInfo.isFull && rInfo.isCBT && lInfo.height == rInfo.height) {
+                    isCBT = true;
+                }
+            }
+        }
+        return new Info_cbt(isCBT, isFull, height);
+    }
+
+
     /**
      * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
      * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
      * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
      * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
      * */
-    Integer[] source = null;
-    TreeNode head = null;
 
     @Before
     public void before() {
-        source = new Integer[] {8,5,2,null,null,7,1,null,null,null,6,null,4,0,null,null,3,null,null};
-        head = TreeNode.build(source);
-        BinaryTree.printNode(head);
         System.out.println("------------------Enviroment has been prepared.-------------------");
     }
 
@@ -185,6 +377,10 @@ public class BinaryTree_dp {
      */
     @Test
     public void test01() {
+        Integer[] source = new Integer[] {8,5,2,null,null,7,1,null,null,null,6,null,4,0,null,null,3,null,null};
+        TreeNode head = TreeNode.build(source);
+        BinaryTree.printNode(head);
+
         Integer[] balancedTree = new Integer[] {1,2,4,8,null,null,null,5,null,9,null,null,3,6,null,null,7,10,null,null,null};
         TreeNode head01 = TreeNode.build(balancedTree);
         System.out.println(isBalance(head));
@@ -199,6 +395,10 @@ public class BinaryTree_dp {
      */
     @Test
     public void test02() {
+        Integer[] source = new Integer[] {8,5,2,null,null,7,1,null,null,null,6,null,4,0,null,null,3,null,null};
+        TreeNode head = TreeNode.build(source);
+        BinaryTree.printNode(head);
+
         Integer[] testTree = new Integer[] {1,2,null,null,3,4,5,6,7,null,null,null,null,null,8,null,9,null,10,null,11,null,null};
         TreeNode head01 = TreeNode.build(testTree);
         System.out.println("max distence of tree1: " + getMaxDistance(head));
@@ -210,21 +410,81 @@ public class BinaryTree_dp {
      * @Author:   on2020-12-05 19:24:56
      * @Param: null
      * @return:
-     * description: 测试获取最大搜索子树算法
+     * description: 测试获取最大搜索子树头节点及size算法
      */
     @Test
     public void test03() {
-        System.out.println(getMaxSearchTreeCount(head));
+        Integer[] source = new Integer[] {8,5,2,null,null,7,1,null,null,null,6,null,4,0,null,null,3,null,null};
+        TreeNode head = TreeNode.build(source);
+        BinaryTree.printNode(head);
+        System.out.println("size: " + getMaxSearchTreeCount(head));
+        System.out.println("head: " + getMaxBSTHead(head).value);
         System.out.println("------------------------------");
         Integer[] testSearchTree = new Integer[] {5,1,0,null,null,4,3,null,null,null,6,null,9,null,null};
         TreeNode head01 = TreeNode.build(testSearchTree);
         BinaryTree.printNode(head01);
         System.out.println(getMaxSearchTreeCount(head01));
+        System.out.println("head: " + getMaxBSTHead(head01).value);
         System.out.println("------------------------------");
         Integer[] testTree = new Integer[] {8,5,1,0,null,null,4,3,null,null,null,6,null,9,null,null,9,5,6,null,null,null};
         TreeNode head02 = TreeNode.build(testTree);
         BinaryTree.printNode(head02);
         System.out.println(getMaxSearchTreeCount(head02));
+        System.out.println("head: " + getMaxBSTHead(head02).value);
         System.out.println("------------------------------");
     }
+
+    /**
+     * @Author:   on2020-12-05 22:55:39
+     * @Param: null
+     * @return:
+     * description: 测试判断满二叉树算法
+     */
+    @Test
+    public void test04() {
+        Integer[] source = new Integer[] {1,2,4,null,null,5,null,null,3,6,null,null,7,null,null};
+        TreeNode head = TreeNode.build(source);
+        BinaryTree.printNode(head);
+        System.out.println("Is full binary tree ? " + isFull(head));
+    }
+
+    /**
+     * @Author:   on2020-12-05 23:53:51
+     * @Param: null
+     * @return:
+     * description: 测试判断完全二叉树算法
+     */
+    @Test
+    public void test05() {
+        Integer[] source = new Integer[] {8,5,2,null,null,7,1,null,null,null,6,null,4,0,null,null,3,null,null};
+        TreeNode head = TreeNode.build(source);
+        BinaryTree.printNode(head);
+        System.out.println("is cbt1 ? " + isCBT(head));
+        System.out.println("is cbt2 ? " + isCBT2(head));
+
+        Integer[] source1 = new Integer[] {1,2,4,null,null,5,null,null,3,6,null,null,7,null,null};
+        TreeNode head1 = TreeNode.build(source1);
+        BinaryTree.printNode(head1);
+        System.out.println("is cbt1 ? " + isCBT(head1));
+        System.out.println("is cbt2 ? " + isCBT2(head1));
+
+        Integer[] source2 = new Integer[] {1,2,4,null,null,null,3,null,null};
+        TreeNode head2 = TreeNode.build(source2);
+        BinaryTree.printNode(head2);
+        System.out.println("is cbt1 ? " + isCBT(head2));
+        System.out.println("is cbt2 ? " + isCBT2(head2));
+
+        Integer[] source3 = new Integer[] {1,2,4,null,null,5,null,null,3,null,null};
+        TreeNode head3 = TreeNode.build(source3);
+        BinaryTree.printNode(head3);
+        System.out.println("is cbt1 ? " + isCBT(head3));
+        System.out.println("is cbt2 ? " + isCBT2(head3));
+
+        Integer[] source4 = new Integer[] {1,2,4,null,null,5,null,null,3,null,6,null,null};
+        TreeNode head4 = TreeNode.build(source4);
+        BinaryTree.printNode(head4);
+        System.out.println("is cbt1 ? " + isCBT(head4));
+        System.out.println("is cbt2 ? " + isCBT2(head4));
+    }
+
 }
