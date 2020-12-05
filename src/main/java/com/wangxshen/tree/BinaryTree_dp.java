@@ -2,6 +2,7 @@ package com.wangxshen.tree;
 
 import org.junit.Before;
 import org.junit.Test;
+import java.util.*;
 
 /**
  * @Author WangShen
@@ -92,12 +93,79 @@ public class BinaryTree_dp {
      * @return: 
      * description: 给定一颗二叉树的头节点，返回这颗二叉树的最大搜索子树的头节点
      */
-   /* public TreeNode getMaxSearchHead(TreeNode node) {
+    public static class Info_maxSearchTree{
+        boolean isAllBST = false;
+        int size;
+        int max;
+        int min;
 
-    }*/
+        public Info_maxSearchTree(boolean isAllBST, int size, int max, int min) {
+            this.isAllBST = isAllBST;
+            this.size = size;
+            this.max = max;
+            this.min = min;
+        }
+    }
 
+    public static int getMaxSearchTreeCount(TreeNode node) {
+        return getMaxSearchCount(node).size;
+    }
 
+    public static Info_maxSearchTree getMaxSearchCount(TreeNode node) {
+        if (node == null) {
+            return null;
+        }
+        Info_maxSearchTree lInfo = getMaxSearchCount(node.lchild);
+        Info_maxSearchTree rInfo = getMaxSearchCount(node.rchild);
+        boolean isAllBST = false;
+        int size = 0;
+        int max = node.value;
+        int min = node.value;
+        if (lInfo != null) {
+            max = Math.max(max, lInfo.max);
+            min = Math.min(min, lInfo.min);
+        }
+        if (rInfo != null) {
+            max = Math.max(max, rInfo.max);
+            min = Math.min(min, rInfo.min);
+        }
 
+        if ((lInfo == null || lInfo.max < node.value) &&
+                (rInfo == null || rInfo.min > node.value) &&
+            (lInfo == null || lInfo.isAllBST) &&
+                (rInfo == null || rInfo.isAllBST)) {
+            isAllBST = true;
+            size = (lInfo == null ? 0 : lInfo.size) + (rInfo == null ? 0 : rInfo.size) + 1;
+        } else {
+            size = Math.max((lInfo == null ? 0 : lInfo.size), (rInfo == null ? 0 : rInfo.size));
+        }
+
+        return new Info_maxSearchTree(isAllBST, size, max, min);
+    }
+
+    /**
+     * @Author:   on2020-12-05 20:04:00
+     * @Param: null
+     * @return:
+     * description: 派对的最大快乐值问题
+     * 这个公司现在要办party，你可以决定哪些员工来，哪些员工不来，规则：
+     * 1. 如果某个员工来了，那他的直属下级都不会来
+     * 2. 派对的整体快乐值是到场的员工快乐值的累加
+     * 3. 你的目标是让派对的整体快乐值最大
+     * 给定一棵多叉树的头节点boss，请返回派对的最大快乐值
+     */
+    //员工定义
+    public static class Employee {
+        public int happy;//员工的快乐值
+        List<Employee> nexts;//员工的直属下级
+    }
+
+    /**
+     * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
+     * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
+     * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
+     * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
+     * */
     Integer[] source = null;
     TreeNode head = null;
 
@@ -136,5 +204,27 @@ public class BinaryTree_dp {
         System.out.println("max distence of tree1: " + getMaxDistance(head));
         BinaryTree.printNode(head01);
         System.out.println("max distence of tree2: " + getMaxDistance(head01));
+    }
+
+    /**
+     * @Author:   on2020-12-05 19:24:56
+     * @Param: null
+     * @return:
+     * description: 测试获取最大搜索子树算法
+     */
+    @Test
+    public void test03() {
+        System.out.println(getMaxSearchTreeCount(head));
+        System.out.println("------------------------------");
+        Integer[] testSearchTree = new Integer[] {5,1,0,null,null,4,3,null,null,null,6,null,9,null,null};
+        TreeNode head01 = TreeNode.build(testSearchTree);
+        BinaryTree.printNode(head01);
+        System.out.println(getMaxSearchTreeCount(head01));
+        System.out.println("------------------------------");
+        Integer[] testTree = new Integer[] {8,5,1,0,null,null,4,3,null,null,null,6,null,9,null,null,9,5,6,null,null,null};
+        TreeNode head02 = TreeNode.build(testTree);
+        BinaryTree.printNode(head02);
+        System.out.println(getMaxSearchTreeCount(head02));
+        System.out.println("------------------------------");
     }
 }
