@@ -2,6 +2,8 @@ package com.wangxshen.tree;
 
 import org.junit.Before;
 import org.junit.Test;
+import sun.reflect.generics.tree.Tree;
+
 import java.util.*;
 
 /**
@@ -355,7 +357,79 @@ public class BinaryTree_dp {
         }
         return new Info_cbt(isCBT, isFull, height);
     }
+    
+    /**
+     * @Author:   on2020-12-06 00:05:22
+     * @Param: null
+     * @return: 
+     * description: 给定一棵二叉树的头节点，和另外两个节点a和b，返回a和b的最低工共祖先
+     */
+    //使用map & set
+    public static TreeNode getLowestAncestor(TreeNode root, TreeNode a, TreeNode b) {
+        HashMap<TreeNode, TreeNode> fatherMap = new HashMap<>();
+        buildMap(root, null, fatherMap);
 
+        HashSet<TreeNode> aSet = new HashSet<>();
+        TreeNode cur = a;
+        while (cur != null) {
+            aSet.add(cur);
+            cur = fatherMap.get(cur);
+        }
+
+        while (!aSet.contains(b)) {
+            b = fatherMap.get(b);
+        }
+        return b;
+    }
+
+    public static void buildMap(TreeNode node, TreeNode father, HashMap<TreeNode, TreeNode> fatherMap) {
+        if (node == null) {
+            return;
+        }
+        fatherMap.put(node,father);
+        buildMap(node.lchild, node, fatherMap);
+        buildMap(node.rchild, node, fatherMap);
+    }
+
+    //不使用map和set
+    public static class Info_ans{
+        TreeNode ans;
+        boolean findA;
+        boolean findB;
+
+        public Info_ans(TreeNode ans, boolean findA, boolean findB) {
+            this.ans = ans;
+            this.findA = findA;
+            this.findB = findB;
+        }
+    }
+
+    public static TreeNode getLowestAncestor2(TreeNode node, TreeNode a, TreeNode b) {
+        Info_ans ans = findAns(node, a, b);
+        return ans.ans;
+    }
+
+    public static Info_ans findAns(TreeNode node, TreeNode a, TreeNode b) {
+        if (node == null) {
+            return new Info_ans(null, false, false);
+        }
+        Info_ans lInfo = findAns(node.lchild, a, b);
+        Info_ans rInfo = findAns(node.rchild, a, b);
+        boolean findA = node == a || lInfo.findA || rInfo.findA;
+        boolean findB = node == b || lInfo.findB || rInfo.findB;
+
+        TreeNode ans = null;
+        if (lInfo.ans != null) {
+            ans = lInfo.ans;
+        }
+        if (rInfo.ans != null) {
+            ans = rInfo.ans;
+        }
+        if (findA && findB && ans == null) {
+            ans = node;
+        }
+        return new Info_ans(ans, findA, findB);
+    }
 
     /**
      * 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试 测试
@@ -485,6 +559,37 @@ public class BinaryTree_dp {
         BinaryTree.printNode(head4);
         System.out.println("is cbt1 ? " + isCBT(head4));
         System.out.println("is cbt2 ? " + isCBT2(head4));
+    }
+
+    /**
+     * @Author:   on2020-12-06 10:13:24
+     * @Param: null
+     * @return:
+     * description: 测试最小工共祖先算法
+     */
+    @Test
+    public void test06() {
+        Integer[] source = new Integer[] {8,5,2,null,null,7,1,null,null,null,6,null,4,0,null,null,3,null,null};
+        TreeNode head = TreeNode.build(source);
+        BinaryTree.printNode(head);
+
+        TreeNode[] nodesArray = TreeNode.getNodesArray(head);
+        TreeNode a, b;
+        int l = nodesArray.length;
+        for (int i = 0; i < 10; i++) {
+            int indexA = (int)(Math.random() * l);
+            int indexB = (int)(Math.random() * l);
+            a = nodesArray[indexA];
+            b = nodesArray[indexB];
+            TreeNode lowestAncestor1 = getLowestAncestor(head, a, b);
+            TreeNode lowestAncestor2 = getLowestAncestor2(head, a, b);
+            if (lowestAncestor1 == lowestAncestor2) {
+                System.out.println("a:" + a.value + ", b:" + b.value + ", ancestor:" + lowestAncestor1.value);
+            } else {
+                System.out.println("fail");
+            }
+
+        }
     }
 
 }

@@ -2,7 +2,9 @@ package com.wangxshen.tree;
 
 import sun.reflect.generics.tree.Tree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Queue;
 
 /**
@@ -68,6 +70,15 @@ public class TreeNode {
         return queue;
     }
 
+    public static TreeNode[] getNodesArray(TreeNode head) {
+        Queue<TreeNode> nodes = getNodes(head);
+        TreeNode[] ans = new TreeNode[nodes.size()];
+        for (int i = 0; i < ans.length; i++) {
+            ans[i] = nodes.poll();
+        }
+        return ans;
+    }
+
     public static void prePush(TreeNode head, Queue<TreeNode> queue) {
         if (head == null) {
             return;
@@ -75,5 +86,22 @@ public class TreeNode {
         queue.add(head);
         prePush(head.lchild, queue);
         prePush(head.rchild, queue);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        TreeNode treeNode = (TreeNode) o;
+        return value == treeNode.value;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
     }
 }
