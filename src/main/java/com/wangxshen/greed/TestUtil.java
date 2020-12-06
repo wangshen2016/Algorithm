@@ -23,4 +23,19 @@ public class TestUtil {
         }
         return ans;
     }
+
+    public static int[] generateRandomStartEnd() {
+        int a = (int)(Math.random() * 24);
+        int b = a + (int)(Math.random() * (24-a)) + 1;
+        return new int[]{a, b};
+    }
+
+    public static int[] generateRandomIntArray(int size, int range) {
+        int[] ans = new int[size];
+        for (int i = 0; i < size; i++) {
+            ans[i] = (int)(Math.random() * range);
+        }
+        return ans;
+    }
+
 }
