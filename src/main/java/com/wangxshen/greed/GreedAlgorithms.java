@@ -394,5 +394,62 @@ public class GreedAlgorithms {
 
         System.out.println("success");
     }
+    
+    /**
+     * @Author:   on2020-12-06 21:35:35
+     * @Param: null
+     * @return: 
+     * description:
+     * 输入：正数数组costs，正数数组profits，正数K，正数M
+     * costs[i]表示i号项目的花费
+     * profits[i]表示i号项目的利润
+     * K表示只能串行的最多做K个项目
+     * M表示初始资金
+     * 每做完一个项目，马上获得收益，可以支持你去做下一个项目，不能并行做项目。
+     * 输出：你最后获得的最大钱数
+     */
+    public static class Profit{
+        int cost;
+        int profit;
+
+        public Profit(int cost, int profit) {
+            this.cost = cost;
+            this.profit = profit;
+        }
+    }
+
+    public static int getMaxMoney(int[] costs, int[] profits, int K, int M) {
+        ArrayList<Profit> profitArray = new ArrayList<>();
+        for (int i = 0; i < costs.length; i++) {
+            profitArray.add(new Profit(costs[i], profits[i]));
+        }
+
+        PriorityQueue<Profit> cqueue = new PriorityQueue<>(new Comparator<Profit>() {
+            @Override
+            public int compare(Profit o1, Profit o2) {
+                return o1.cost - o2.cost;
+            }
+        });
+        PriorityQueue<Profit> pqueue = new PriorityQueue<>(new Comparator<Profit>() {
+            @Override
+            public int compare(Profit o1, Profit o2) {
+                return o2.profit - o1.profit;
+            }
+        });
+
+        for (int i = 0; i < profitArray.size(); i++) {
+            cqueue.add(profitArray.get(i));
+        }
+        for (int i = 0; i < K; i++) {
+            while (cqueue.peek().cost <= M) {
+                pqueue.add(cqueue.poll());
+            }
+            if (pqueue.isEmpty()) {
+                return M;
+            }
+            M += pqueue.poll().profit;
+        }
+        return M;
+    }
 
 }
