@@ -588,7 +588,6 @@ public class BinaryTree_dp {
             } else {
                 System.out.println("fail");
             }
-
         }
     }
 

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree_dp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/BinaryTree_dp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/tree/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +195,7 @@
       <workItem from="1607144711537" duration="17131000" />
       <workItem from="1607177214514" duration="49000" />
       <workItem from="1607178188187" duration="6563000" />
-      <workItem from="1607219550250" duration="2632000" />
+      <workItem from="1607219550250" duration="3013000" />
     </task>
     <servers />
   </component>
