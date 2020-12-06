@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="" />
+    <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/greed/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/greed/GreedAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/greed/GreedAlgorithms.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,22 +61,7 @@
       <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\sort\sort2_simple" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTree_dp.test06">
-    <configuration name="AVLTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.tree.avlTree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.tree.avlTree" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.tree.avlTree.AVLTree" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GreedAlgorithms.testMinPath">
     <configuration name="BinaryTree_dp.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -137,13 +126,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GreedAlgorithms.testMinPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.greed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangxshen.greed" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.greed.GreedAlgorithms" />
+      <option name="METHOD_NAME" value="testMinPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GreedAlgorithms.testMinPath" />
         <item itemvalue="JUnit.BinaryTree_dp.test06" />
         <item itemvalue="JUnit.BinaryTree_dp.test05" />
         <item itemvalue="JUnit.BinaryTree_dp.test03" />
         <item itemvalue="JUnit.BinaryTree_dp.test04" />
-        <item itemvalue="JUnit.AVLTree" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +199,7 @@
       <workItem from="1607144711537" duration="17131000" />
       <workItem from="1607177214514" duration="49000" />
       <workItem from="1607178188187" duration="6563000" />
-      <workItem from="1607219550250" duration="3276000" />
+      <workItem from="1607219550250" duration="6874000" />
     </task>
     <servers />
   </component>
@@ -222,22 +227,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="601" key="GridCell.Tab.0.bottom" timestamp="1607222852810">
+    <state width="1493" height="200" key="GridCell.Tab.0.bottom" timestamp="1607228469558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="601" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607222852810" />
-    <state width="1493" height="601" key="GridCell.Tab.0.center" timestamp="1607222852810">
+    <state width="1493" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607228469558" />
+    <state width="1493" height="200" key="GridCell.Tab.0.center" timestamp="1607228469558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="601" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607222852810" />
-    <state width="1493" height="601" key="GridCell.Tab.0.left" timestamp="1607222852810">
+    <state width="1493" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607228469558" />
+    <state width="1493" height="200" key="GridCell.Tab.0.left" timestamp="1607228469558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="601" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607222852810" />
-    <state width="1493" height="601" key="GridCell.Tab.0.right" timestamp="1607222852810">
+    <state width="1493" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607228469558" />
+    <state width="1493" height="200" key="GridCell.Tab.0.right" timestamp="1607228469558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="601" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607222852810" />
+    <state width="1493" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607228469558" />
     <state width="1493" height="278" key="GridCell.Tab.1.bottom" timestamp="1607184761082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
