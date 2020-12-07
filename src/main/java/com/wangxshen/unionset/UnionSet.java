@@ -37,8 +37,13 @@ public class UnionSet<V> {
 
     public Node<V> getFather(Node<V> node) {
         Node<V> cur = node;
+        Deque<Node<V>> stack = new ArrayDeque<>();
         while (cur != parents.get(cur)) {
+            stack.push(cur);
             cur = parents.get(cur);
+        }
+        while (!stack.isEmpty()) {
+            parents.put(stack.pop(), cur);
         }
         return cur;
     }

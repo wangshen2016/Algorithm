@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/unionset/UnionSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/unionset/UnionSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/unionset/UnionSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +199,7 @@
       <workItem from="1607178188187" duration="6563000" />
       <workItem from="1607219550250" duration="18797000" />
       <workItem from="1607256767994" duration="3871000" />
-      <workItem from="1607308496379" duration="1900000" />
+      <workItem from="1607308496379" duration="2655000" />
     </task>
     <servers />
   </component>
