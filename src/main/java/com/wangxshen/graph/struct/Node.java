@@ -21,4 +21,11 @@ public class Node {
         this.nexts = new ArrayList<>();
         this.edges = new ArrayList<>();
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + value +
+                '}';
+    }
 }
