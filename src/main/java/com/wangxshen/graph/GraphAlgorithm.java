@@ -148,7 +148,7 @@ public class GraphAlgorithm {
      * @Author:   on2020-12-08 16:39:27
      * @Param: null
      * @return:
-     * description: 最小生成树问题 - Kruskal算法
+     * description: 无向图的最小生成树问题 - Kruskal算法
      * 使用并查集
      * 下面是有向图的算法，无向图就向边集增加相反的边即可
      */
@@ -237,30 +237,80 @@ public class GraphAlgorithm {
         return result;
     }
 
+    /**
+     * @Author:   on2020-12-08 18:07:39
+     * @Param: null
+     * @return:
+     * description: 无向图的最小生成树问题 - prim算法
+     */
+
+    public static Set<Edge> prim(Graph graph) {
+        HashSet<Node> nodeSet = new HashSet<>();
+
+        PriorityQueue<Edge> minHeap = new PriorityQueue<>((e1, e2) -> e1.weight-e2.weight);
+
+        Set<Edge> result = new HashSet<>();
+
+        HashSet<Edge> edgeSet = new HashSet<>();//去重用
+
+        for (Node node : graph.nodes.values()) {
+            nodeSet.add(node);
+            for (Edge edge : node.edges) {
+                minHeap.add(edge);
+                edgeSet.add(edge);
+            }
+
+            while (!minHeap.isEmpty()) {
+                Edge poll = minHeap.poll();
+                if (!nodeSet.contains(poll.to)) {
+                    nodeSet.add(poll.to);
+                    result.add(poll);
+                    for (Edge edge : poll.to.edges) {
+                        if (!edgeSet.contains(edge)) {
+                            minHeap.add(edge);
+                            edgeSet.add(edge);
+                        }
+                    }
+                }
+            }
+            break;
+        }
+
+        return result;
+    }
+
     @Test
-    public void testKruscal() {
+    public void testKruscalAndPrim() {
+        //生成一个无向图
         Integer[][] matrix = new Integer[][] {
-                {10,0,1},
-                {20,0,5},
-                {30,1,0},
-                {40,1,2},
-                {50,1,3},
-                {10,2,1},
-                {20,2,4},
-                {30,3,2},
-                {40,3,4},
-                {50,4,5},
-                {100,5,6}
+                {10,0,1},{10,1,0},
+                {20,0,5},{20,5,0},
+                {50,1,3},{50,3,1},
+                {10,2,1},{10,1,2},
+                {20,2,4},{20,4,2},
+                {30,3,2},{30,2,3},
+                {40,3,4},{40,4,3},
+                {50,4,5},{50,5,4},
+                {100,5,6},{100,6,5}
         };
 
         Graph graph = GraphUtil.createGraph(matrix);
+        System.out.println("------orignal--------");
         graph.edges.stream().forEach(edge -> {
             System.out.println(edge);
         });
-        System.out.println("-----------------");
+        System.out.println("-------kruscal-------");
         Set<Edge> result = kruskal(graph);
         result.stream().forEach(edge -> {
             System.out.println(edge);
         });
+        System.out.println("-------prim-------");
+        Set<Edge> result2 = prim(graph);
+        result2.stream().forEach(edge -> {
+            System.out.println(edge);
+        });
     }
+
+
+
 }
