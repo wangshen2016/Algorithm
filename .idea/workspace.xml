@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/graph/DijkstraOptimized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursion/HanoiTower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursion/ReverseStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/graph/DijkstraOptimized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/graph/DijkstraOptimized.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,7 @@
       <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\sort\sort2_simple" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DijkstraOptimized.test">
+  <component name="RunManager" selected="JUnit.ReverseStack.test">
     <configuration name="DijkstraOptimized.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -93,22 +95,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphAlgorithm.testKruscal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.graph" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.graph.GraphAlgorithm" />
-      <option name="METHOD_NAME" value="testKruscal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GraphAlgorithm.testKruscalAndPrim" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -125,17 +111,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphAlgorithm.testTopologicSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HanoiTower.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.graph.*" />
+          <option name="PATTERN" value="com.wangxshen.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.graph" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.graph.GraphAlgorithm" />
-      <option name="METHOD_NAME" value="testTopologicSort" />
+      <option name="PACKAGE_NAME" value="com.wangxshen.recursion" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursion.HanoiTower" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseStack.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangxshen.recursion" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursion.ReverseStack" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReverseStack.test" />
+        <item itemvalue="JUnit.HanoiTower.test" />
         <item itemvalue="JUnit.DijkstraOptimized.test" />
         <item itemvalue="JUnit.GraphAlgorithm.testDijkstra" />
         <item itemvalue="JUnit.GraphAlgorithm.testKruscalAndPrim" />
-        <item itemvalue="JUnit.GraphAlgorithm.testKruscal" />
-        <item itemvalue="JUnit.GraphAlgorithm.testTopologicSort" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +204,7 @@
       <workItem from="1607256767994" duration="3871000" />
       <workItem from="1607308496379" duration="26112000" />
       <workItem from="1607479837285" duration="2531000" />
-      <workItem from="1607500279020" duration="8215000" />
+      <workItem from="1607500279020" duration="17367000" />
     </task>
     <servers />
   </component>
@@ -230,22 +232,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="75" key="GridCell.Tab.0.bottom" timestamp="1607513967056">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom" timestamp="1607527734181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="75" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607513967056" />
-    <state width="1493" height="75" key="GridCell.Tab.0.center" timestamp="1607513967056">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607527734181" />
+    <state width="1493" height="254" key="GridCell.Tab.0.center" timestamp="1607527734180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="75" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607513967056" />
-    <state width="1493" height="75" key="GridCell.Tab.0.left" timestamp="1607513967056">
+    <state width="1493" height="254" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607527734180" />
+    <state width="1493" height="254" key="GridCell.Tab.0.left" timestamp="1607527734180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="75" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607513967056" />
-    <state width="1493" height="75" key="GridCell.Tab.0.right" timestamp="1607513967056">
+    <state width="1493" height="254" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607527734180" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right" timestamp="1607527734181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="75" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607513967056" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607527734181" />
     <state width="1493" height="213" key="GridCell.Tab.1.bottom" timestamp="1607424635409">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
