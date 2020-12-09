@@ -312,5 +312,70 @@ public class GraphAlgorithm {
     }
 
 
+    /**
+     * @Author:   on2020-12-09 17:01:02
+     * @Param: null
+     * @return:
+     * description: 无负值有向图某点到任意一点最短距离 -- Dijkstra算法
+     */
+    public static HashMap<Node, Integer> dijkstra(Node start) {
+
+        HashMap<Node, Integer> distanceMap = new HashMap<>();
+        HashSet<Node> selectedNodes = new HashSet<>();
+
+        distanceMap.put(start, 0);
+
+        Node from = getMinAndUnselectedNext(distanceMap, selectedNodes);
+        Node to = null;
+        while (from != null) {
+            int distance = distanceMap.get(from);
+            for (Edge edge : from.edges) {
+                to = edge.to;
+                if (!distanceMap.containsKey(to)) {
+                    distanceMap.put(to, distance + edge.weight);
+                } else {
+                    distanceMap.put(to, Math.min(distanceMap.get(to), edge.weight + distance));
+                }
+            }
+            selectedNodes.add(from);
+            from = getMinAndUnselectedNext(distanceMap, selectedNodes);
+        }
+        return distanceMap;
+    }
+
+    private static Node getMinAndUnselectedNext(HashMap<Node, Integer> distance, HashSet<Node> selectedNodes) {
+        Node minNode = null;
+        Set<Node> nodes = distance.keySet();
+        for (Node node : nodes) {
+            if (!selectedNodes.contains(node)) {
+                minNode = minNode == null || distance.get(minNode) > distance.getOrDefault(node, Integer.MAX_VALUE) ? node : minNode;
+            }
+        }
+        return minNode;
+    }
+
+    @Test
+    public void testDijkstra() {
+        Integer[][] matrix = new Integer[][] {
+                {10,0,1},{10,1,0},
+                {20,0,5},{20,5,0},
+                {50,1,3},{50,3,1},
+                {10,2,1},{10,1,2},
+                {20,2,4},{20,4,2},
+                {30,3,2},{30,2,3},
+                {40,3,4},{40,4,3},
+                {50,4,5},{50,5,4},
+                {100,5,6},{100,6,5}
+        };
+
+        Graph graph = GraphUtil.createGraph(matrix);
+
+        for (Node node : graph.nodes.values()) {
+            HashMap<Node, Integer> distance = dijkstra(node);
+            System.out.println("start: " + node);
+            System.out.println("distance: " + distance);
+            System.out.println("-------------------------");
+        }
+    }
 
 }
