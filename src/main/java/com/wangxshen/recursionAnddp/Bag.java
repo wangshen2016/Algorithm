@@ -1,4 +1,4 @@
-package com.wangxshen.recursion;
+package com.wangxshen.recursionAnddp;
 
 import org.junit.Test;
 
@@ -38,11 +38,34 @@ public class Bag {
         return Math.max(yes, no);
     }
 
+    public static int dp(int[] w, int[] v, int bag) {
+        int[][] dp = new int[w.length + 1][bag + 1];
+        //1.  依据递归的base填充初始行（倒数第一行），
+        //    即 i == w.length : 0, dp已经初始化，省略dp[w.length][col]=0
+
+        //2. 从倒数第二行开始向上填充dp，下->上，左->右
+        for (int i = w.length-1; i >=0; i--) {
+            for (int j = 0; j <= bag; j++) {
+                //3. int no = process(w, v, i+1, rest);
+                int a = dp[i+1][j];
+                //4. int r = process(w, v, i+1, rest - w[i]);
+                //   这里要判断是否越界
+                int b = Integer.MIN_VALUE;
+                if (j >= w[i]) {
+                    b = dp[i+1][j - w[i]] + v[i];
+                }
+                dp[i][j] = Math.max(a, b);
+            }
+        }
+        return dp[0][bag];
+    }
+
     @Test
     public void test() {
         int bag = 10;
         int[] w = new int[]{1,2,3,4,5};
         int[] v = new int[]{5,4,3,2,1};
         System.out.println(solution(w, v, bag));
+        System.out.println(dp(w, v, bag));
     }
 }
