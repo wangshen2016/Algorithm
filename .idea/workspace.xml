@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/CoffeeCup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/LongestCommonSubString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/Sticker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/review/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/review/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/review/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/HorseInChess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/slidingwindow/MonotonousStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/slidingwindow/SubArrayCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/slidingwindow/WindowMaxValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/review/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/review/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/CoffeeCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/CoffeeCup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wangxshen/linkedList/execises" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springframeworkstudy" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -67,77 +64,80 @@
       <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\sort\sort2_simple" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CoffeeCup">
-    <configuration name="CoffeeCup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursionAnddp.CoffeeCup" />
+  <component name="RunManager" selected="JUnit.MonotonousStack.test0">
+    <configuration name="MonotonousStack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.recursionAnddp.*" />
+          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sticker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.recursionAnddp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.recursionAnddp" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursionAnddp.Sticker" />
+      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.MonotonousStack" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sticker.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonotonousStack.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.recursionAnddp.*" />
+          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.recursionAnddp" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursionAnddp.Sticker" />
+      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.MonotonousStack" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonotonousStack.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.review.*" />
+          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.review" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.review.Test4" />
+      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.MonotonousStack" />
+      <option name="METHOD_NAME" value="test0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.WindowMaxValue" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test4.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WindowMaxValue.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.review.*" />
+          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.review" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.review.Test4" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.WindowMaxValue" />
+      <option name="METHOD_NAME" value="test0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CoffeeCup" />
-        <item itemvalue="JUnit.Sticker" />
-        <item itemvalue="JUnit.Sticker.test" />
-        <item itemvalue="JUnit.Test4.test" />
-        <item itemvalue="JUnit.Test4" />
+        <item itemvalue="JUnit.MonotonousStack.test0" />
+        <item itemvalue="JUnit.MonotonousStack" />
+        <item itemvalue="JUnit.MonotonousStack.test" />
+        <item itemvalue="JUnit.WindowMaxValue" />
+        <item itemvalue="JUnit.WindowMaxValue.test0" />
       </list>
     </recent_temporary>
   </component>
@@ -212,6 +212,10 @@
       <workItem from="1607911820614" duration="13654000" />
       <workItem from="1607944460476" duration="4034000" />
       <workItem from="1608000692663" duration="18826000" />
+      <workItem from="1608092638864" duration="11299000" />
+      <workItem from="1608175017439" duration="10030000" />
+      <workItem from="1608264932871" duration="695000" />
+      <workItem from="1608347328391" duration="5247000" />
     </task>
     <servers />
   </component>
@@ -239,42 +243,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601105702574" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601220415963">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608265554816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601220415963" />
-    <state width="1493" height="133" key="GridCell.Tab.0.bottom" timestamp="1608034581664">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608265554816" />
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom" timestamp="1608365913083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608034581664" />
-    <state width="1493" height="133" key="GridCell.Tab.0.center" timestamp="1608034581663">
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
+    <state width="1493" height="137" key="GridCell.Tab.0.center" timestamp="1608365913083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="133" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608034581663" />
-    <state width="1493" height="133" key="GridCell.Tab.0.left" timestamp="1608034581663">
+    <state width="1493" height="137" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
+    <state width="1493" height="137" key="GridCell.Tab.0.left" timestamp="1608365913083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="133" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608034581663" />
-    <state width="1493" height="133" key="GridCell.Tab.0.right" timestamp="1608034581663">
+    <state width="1493" height="137" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
+    <state width="1493" height="137" key="GridCell.Tab.0.right" timestamp="1608365913083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="133" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608034581663" />
-    <state width="1493" height="230" key="GridCell.Tab.1.bottom" timestamp="1608021128764">
+    <state width="1493" height="137" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
+    <state width="1493" height="230" key="GridCell.Tab.1.bottom" timestamp="1608349006864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608021128764" />
-    <state width="1493" height="230" key="GridCell.Tab.1.center" timestamp="1608021128764">
+    <state width="1493" height="230" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608349006864" />
+    <state width="1493" height="230" key="GridCell.Tab.1.center" timestamp="1608349006864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608021128764" />
-    <state width="1493" height="230" key="GridCell.Tab.1.left" timestamp="1608021128764">
+    <state width="1493" height="230" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608349006864" />
+    <state width="1493" height="230" key="GridCell.Tab.1.left" timestamp="1608349006863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608021128764" />
-    <state width="1493" height="230" key="GridCell.Tab.1.right" timestamp="1608021128764">
+    <state width="1493" height="230" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608349006863" />
+    <state width="1493" height="230" key="GridCell.Tab.1.right" timestamp="1608349006864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608021128764" />
+    <state width="1493" height="230" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608349006864" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1601105457156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -291,10 +295,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607424749170" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606102447882">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608265522102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606102447882" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608265522102" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
