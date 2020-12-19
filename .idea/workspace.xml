@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/HorseInChess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/slidingwindow/MonotonousStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/slidingwindow/SubArrayCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/slidingwindow/WindowMaxValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/CoffeeCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/CoffeeCup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/HorseInChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/HorseInChess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,23 @@
       <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\sort\sort2_simple" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MonotonousStack.test0">
+  <component name="RunManager" selected="JUnit.HorseInChess.test">
+    <configuration name="HorseInChess.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.recursionAnddp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangxshen.recursionAnddp" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursionAnddp.HorseInChess" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonotonousStack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -127,29 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindowMaxValue.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.WindowMaxValue" />
-      <option name="METHOD_NAME" value="test0" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HorseInChess.test" />
         <item itemvalue="JUnit.MonotonousStack.test0" />
         <item itemvalue="JUnit.MonotonousStack" />
         <item itemvalue="JUnit.MonotonousStack.test" />
         <item itemvalue="JUnit.WindowMaxValue" />
-        <item itemvalue="JUnit.WindowMaxValue.test0" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +212,7 @@
       <workItem from="1608092638864" duration="11299000" />
       <workItem from="1608175017439" duration="10030000" />
       <workItem from="1608264932871" duration="695000" />
-      <workItem from="1608347328391" duration="5247000" />
+      <workItem from="1608347328391" duration="7958000" />
     </task>
     <servers />
   </component>
@@ -247,22 +244,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608265554816" />
-    <state width="1493" height="137" key="GridCell.Tab.0.bottom" timestamp="1608365913083">
+    <state width="1493" height="172" key="GridCell.Tab.0.bottom" timestamp="1608368575109">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
-    <state width="1493" height="137" key="GridCell.Tab.0.center" timestamp="1608365913083">
+    <state width="1493" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608368575109" />
+    <state width="1493" height="172" key="GridCell.Tab.0.center" timestamp="1608368575108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
-    <state width="1493" height="137" key="GridCell.Tab.0.left" timestamp="1608365913083">
+    <state width="1493" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608368575108" />
+    <state width="1493" height="172" key="GridCell.Tab.0.left" timestamp="1608368575108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
-    <state width="1493" height="137" key="GridCell.Tab.0.right" timestamp="1608365913083">
+    <state width="1493" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608368575108" />
+    <state width="1493" height="172" key="GridCell.Tab.0.right" timestamp="1608368575109">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608365913083" />
+    <state width="1493" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608368575109" />
     <state width="1493" height="230" key="GridCell.Tab.1.bottom" timestamp="1608349006864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
