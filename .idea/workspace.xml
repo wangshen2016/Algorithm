@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8022cc0d-c87c-4645-a177-c64f30e465ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/kmp/KMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/kmp/LoopString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/review/Test5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/HorseInChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangxshen/recursionAnddp/HorseInChess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <recent name="D:\Git_MyProject\Algorithm\src\main\java\com\wangxshen\sort\sort2_simple" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HorseInChess.test">
+  <component name="RunManager" selected="JUnit.LoopString.test">
     <configuration name="HorseInChess.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -72,6 +74,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.wangxshen.recursionAnddp" />
       <option name="MAIN_CLASS_NAME" value="com.wangxshen.recursionAnddp.HorseInChess" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoopString.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxshen.kmp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangxshen.kmp" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.kmp.LoopString" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -93,22 +111,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonotonousStack.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.MonotonousStack" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MonotonousStack.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -125,28 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindowMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test5.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangxshen.slidingwindow.*" />
+          <option name="PATTERN" value="com.wangxshen.review.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wangxshen.slidingwindow" />
-      <option name="MAIN_CLASS_NAME" value="com.wangxshen.slidingwindow.WindowMaxValue" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.wangxshen.review" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxshen.review.Test5" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoopString.test" />
+        <item itemvalue="JUnit.Test5.test" />
         <item itemvalue="JUnit.HorseInChess.test" />
         <item itemvalue="JUnit.MonotonousStack.test0" />
         <item itemvalue="JUnit.MonotonousStack" />
-        <item itemvalue="JUnit.MonotonousStack.test" />
-        <item itemvalue="JUnit.WindowMaxValue" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +215,9 @@
       <workItem from="1608092638864" duration="11299000" />
       <workItem from="1608175017439" duration="10030000" />
       <workItem from="1608264932871" duration="695000" />
-      <workItem from="1608347328391" duration="7958000" />
+      <workItem from="1608347328391" duration="8562000" />
+      <workItem from="1608432952025" duration="1793000" />
+      <workItem from="1608518718255" duration="4037000" />
     </task>
     <servers />
   </component>
@@ -244,22 +249,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608265554816" />
-    <state width="1493" height="172" key="GridCell.Tab.0.bottom" timestamp="1608368575109">
+    <state width="1493" height="172" key="GridCell.Tab.0.bottom" timestamp="1608537230600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608368575109" />
-    <state width="1493" height="172" key="GridCell.Tab.0.center" timestamp="1608368575108">
+    <state width="1493" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608537230600" />
+    <state width="1493" height="172" key="GridCell.Tab.0.center" timestamp="1608537230600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608368575108" />
-    <state width="1493" height="172" key="GridCell.Tab.0.left" timestamp="1608368575108">
+    <state width="1493" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608537230600" />
+    <state width="1493" height="172" key="GridCell.Tab.0.left" timestamp="1608537230600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608368575108" />
-    <state width="1493" height="172" key="GridCell.Tab.0.right" timestamp="1608368575109">
+    <state width="1493" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608537230600" />
+    <state width="1493" height="172" key="GridCell.Tab.0.right" timestamp="1608537230600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608368575109" />
+    <state width="1493" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608537230600" />
     <state width="1493" height="230" key="GridCell.Tab.1.bottom" timestamp="1608349006864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
